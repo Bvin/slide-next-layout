@@ -1,19 +1,142 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<cn.bvin.android.lib.widget.next.SlideNextLayout
+    android:id="@+id/snl"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+    android:orientation="vertical"
     android:layout_height="match_parent"
-    tools:context="cn.bvin.android.apps.demo.next.MainActivity">
+    android:layout_width="match_parent">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#449cfd" >
 
-</android.support.constraint.ConstraintLayout>
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="200.0dip"
+                android:gravity="center"
+                android:text="我是第一页"
+                android:textColor="#ff0000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="200.0dip"
+                android:gravity="center"
+                android:text="我是第一页"
+                android:textColor="#ff0000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="200.0dip"
+                android:gravity="center"
+                android:text="我是第一页"
+                android:textColor="#ff0000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="200.0dip"
+                android:gravity="center"
+                android:text="我是第一页"
+                android:textColor="#ff0000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="200.0dip"
+                android:gravity="center"
+                android:text="我是第一页"
+                android:textColor="#ff0000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="200.0dip"
+                android:gravity="center"
+                android:text="我是第一页"
+                android:textColor="#ff0000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10.0dip"
+                android:text="--继续拖动,查看图文详情--"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:background="#b49cfd"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="200.0dip"
+                android:gravity="center"
+                android:text="我是第二页"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="200.0dip"
+                android:gravity="center"
+                android:text="我是第二页"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="200.0dip"
+                android:gravity="center"
+                android:text="我是第二页"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="200.0dip"
+                android:gravity="center"
+                android:text="我是第二页"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="200.0dip"
+                android:gravity="center"
+                android:text="我是第二页"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="200.0dip"
+                android:gravity="center"
+                android:text="我是第二页"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10.0dip"
+                android:text="第二页底部"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</cn.bvin.android.lib.widget.next.SlideNextLayout>
