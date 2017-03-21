@@ -12,6 +12,7 @@ import android.widget.ScrollView;
 import android.widget.Scroller;
 
 /**
+ * 默认竖向布局。
  * Created by bvin on 2017/3/15.
  */
 
@@ -34,13 +35,19 @@ public class SlideNextLayout extends LinearLayout {
 
     public SlideNextLayout(Context context) {
         super(context);
+        init(context);
     }
 
     public SlideNextLayout(Context context, AttributeSet attrs) {
         super(context, attrs);
+        init(context);
+    }
+
+    private void init(Context context) {
+        setOrientation(VERTICAL);
         mScroller = new Scroller(context);
         // 最小有效移动距离
-        mTouchSlop = ViewConfiguration.get(getContext()).getScaledTouchSlop();
+        mTouchSlop = ViewConfiguration.get(context).getScaledTouchSlop();
     }
 
     @Override
