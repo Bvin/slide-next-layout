@@ -1,7 +1,6 @@
 package cn.bvin.android.lib.widget.next;
 
 import android.content.Context;
-import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.MotionEvent;
@@ -37,7 +36,7 @@ public class SlideNextLayout extends LinearLayout {
         super(context);
     }
 
-    public SlideNextLayout(Context context, @Nullable AttributeSet attrs) {
+    public SlideNextLayout(Context context, AttributeSet attrs) {
         super(context, attrs);
         mScroller = new Scroller(context);
         // 最小有效移动距离
