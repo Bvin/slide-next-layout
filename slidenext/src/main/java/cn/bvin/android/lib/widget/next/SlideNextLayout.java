@@ -70,14 +70,6 @@ public class SlideNextLayout extends LinearLayout {
     }
 
     @Override
-    protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
-        super.onMeasure(widthMeasureSpec, heightMeasureSpec);
-        if (mFirstPage != null) {
-            Log.d("onFinishInflate: ", "" + mFirstPage.getMeasuredHeight());
-        }
-    }
-
-    @Override
     public boolean onInterceptTouchEvent(MotionEvent ev) {
         if (!mEnable || mFirstPage == null || mNextPage == null) return super.onInterceptTouchEvent(ev);
         final int y = (int) ev.getY();
